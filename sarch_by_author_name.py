@@ -1,7 +1,7 @@
 
 import json
 
-from data_classes import Institution, Author, Paper, Expertise
+from containers import Institution, Author, Paper, Expertise
 from google_schorlar_sercher import GoogleScharlarSearcher
 
 if __name__ == "__main__" :
