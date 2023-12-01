@@ -74,6 +74,9 @@ class Paper :
     referenced_list : list[str] = None
     cite_bibtex : str = None
 
+    conference_acronym : str = None
+    publisher : str = None
+
     def toJSON(self):
         '''convert to JSON recursively'''
         return json.dumps(self, default=lambda o: o.__dict__, 

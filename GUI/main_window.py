@@ -42,7 +42,6 @@ class MainWindow(QtWidgets.QMainWindow) :
         main_layout.addWidget(center_widget)
         main_layout.addWidget(paper_info_widget)
 
-
         self.cetntral_widget = QtWidgets.QWidget()
         self.cetntral_widget.setLayout(main_layout)
         self.setCentralWidget(self.cetntral_widget)
