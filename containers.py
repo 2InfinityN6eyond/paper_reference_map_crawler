@@ -2,6 +2,24 @@ import json
 from dataclasses import dataclass
 
 @dataclass
+class JournalConference :
+    type : str = None
+    name : str = None
+    ISSN : str = None
+    eissn : str = None
+    publisher : str = None
+    URL : str = None
+    Country : str = None
+    Status : str = None
+
+    def toJSON(self) :
+        return json.dumps(self, default=lambda o: o.__dict__, 
+            sort_keys=True, indent=4)
+    def toDict(self) :
+        return json.loads(self.toJSON())
+
+
+@dataclass
 class Institution :
     name :str
     google_scholar_url : str
