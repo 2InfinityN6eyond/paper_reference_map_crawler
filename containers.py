@@ -73,6 +73,8 @@ class Paper :
     reference_list : list[str] = None
     referenced_list : list[str] = None
     cite_bibtex : str = None
+    issn_type : dict = None
+
 
     conference_acronym : str = None
     publisher : str = None
