@@ -100,3 +100,4 @@ class Paper :
         self.reference_list = dic['reference_list']
         self.referenced_list = dic['referenced_list']
         self.cite_bibtex = dic['cite_bibtex']
+
